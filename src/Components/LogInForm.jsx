@@ -11,7 +11,7 @@ const LogInForm = () => {
 
     const handleSubmit = (event)=>{
         event.preventDefault();
-        if(event.target.name===""){
+        if(formData.email===""  || formData.password===""){
             return alert("Please fill the required fields")
         }
         console.log("Form Data" , formData);
